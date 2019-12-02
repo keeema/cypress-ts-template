@@ -18,14 +18,15 @@ function describeForCustomSuperDomain(
           `expect ${url.host} to contains "super-domain-workaround")`
         ).to.equal("super-domain-workaround")
       );
-    });
+    }); 
 
-    fn.call(this);
+    describe("Test", () => {
+      fn.call(this);
+    });
   });
 }
 
 describeForCustomSuperDomain("AppPart", () => {
-  describe("Test", () => {
     let testNumber = 0;
     let counter = 0;
 
@@ -65,5 +66,4 @@ describeForCustomSuperDomain("AppPart", () => {
           ).to.equal(testNumber)
         );
     });
-  });
 });
