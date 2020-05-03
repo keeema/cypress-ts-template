@@ -5,7 +5,6 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "noEmitHelpers": true,
     "noImplicitAny": true,
     "strictPropertyInitialization": true,
     "preserveConstEnums": false,
@@ -20,10 +19,7 @@
     ],
     "types": ["cypress"],
     "sourceMap": true,
-    "reactNamespace": "b",
-    "removeComments": false,
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true
+    "removeComments": false
   },
   "include": ["**/*.ts"]
 }

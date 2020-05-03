@@ -8,11 +8,12 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@cypress/webpack-preprocessor": "^4.1.1",
-    "cypress": "^3.8.1",
-    "ts-loader": "^6.2.1",
-    "typescript": "^3.7.4",
-    "webpack": "^4.41.5"
+  "dependencies": {},
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.1.2",
+    "cypress": "^4.5.0",
+    "ts-loader": "^7.0.2",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0"
   }
 }
