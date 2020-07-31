@@ -1,18 +1,10 @@
 // plugins file
-const webpack = require("@cypress/webpack-preprocessor");
+const webPackPreProcessor = require("@cypress/webpack-preprocessor");
+
 module.exports = (on, config) => {
   const options = {
-    // send in the options from your webpack.config.js, so it works the same
-    // as your app's code
     webpackOptions: require("../../webpack.config"),
-    watchOptions: {}
+    watchOptions: {},
   };
-  on("file:preprocessor", getWepPackWithFileChange(options));
+  on("file:preprocessor", webPackPreProcessor(options));
 };
-function getWepPackWithFileChange(options) {
-  const webPackPreProcessor = webpack(options);
-  return function(file) {
-    file.outputPath = file.outputPath.replace(".ts", ".js");
-    return webPackPreProcessor(file);
-  };
-}
