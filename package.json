@@ -11,6 +11,7 @@
   "devDependencies": {
     "@cypress/webpack-preprocessor": "^5.4.2",
     "cypress": "^4.11.0",
+    "cypress-failed-log": "^2.7.0",
     "ts-loader": "^8.0.1",
     "typescript": "^3.9.7",
     "webpack": "^4.44.0"
