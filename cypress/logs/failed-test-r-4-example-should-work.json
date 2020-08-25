@@ -1,0 +1,12 @@
+{
+  "specName": "test.spec.ts",
+  "title": "should work",
+  "suiteName": "Example",
+  "testId": "r4",
+  "testName": "Example should work",
+  "testError": "Timed out retrying: expected false to be true",
+  "testCommands": [
+    "get div",
+    "assert expected **false** to be true"
+  ]
+}
